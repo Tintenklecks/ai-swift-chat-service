@@ -1,6 +1,7 @@
 import Foundation
 
-struct AIChatMessage {
+struct AIChatMessage: Identifiable {
+    let id = UUID()
     let role: AIChatRole
     let content: String
     let timestamp = Date()
